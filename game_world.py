@@ -23,6 +23,7 @@ def render():
 def remove_object(o):
     for layer in world:
         if o in layer:
-            world.remove(o)
+            layer.remove(o)
+            return
 
     raise Exception("No object")
