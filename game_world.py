@@ -13,3 +13,7 @@ def update():
 def render():
     for o in world:
         o.draw()
+
+def remove_object(o):
+    if o in world:
+        world.remove(o)
