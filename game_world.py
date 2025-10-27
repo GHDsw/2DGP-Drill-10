@@ -2,7 +2,8 @@
 
 #world[0] : 0차 오브젝트들
 #world[1] : 1차 오브젝트들
-world = [[],[]]
+#world[2] : 2차 오브젝트들
+world = [[],[],[]]
 
 def add_object(o, depth = 0):
     world[depth].append(o)
