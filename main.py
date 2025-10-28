@@ -22,12 +22,11 @@ def handle_events():
 def reset_world():
     global boy
 
-    grass = Grass()
+    grass = Grass(30)
     game_world.add_object(grass,0)
 
-    grass1 = Grass()
-    grass1.y = 10
-    game_world.add_object(grass1, 2)
+    grass_f = Grass(10)
+    game_world.add_object(grass_f, 2)
 
     boy = Boy()
     game_world.add_object(boy,1)

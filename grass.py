@@ -2,9 +2,9 @@ from pico2d import load_image
 
 
 class Grass:
-    def __init__(self):
+    def __init__(self, y=30):
         self.image = load_image('grass.png')
-        self.y = 30 # Default y position
+        self.y = y # Default y position
 
     def draw(self):
         self.image.draw(400, self.y)
